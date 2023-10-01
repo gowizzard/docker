@@ -1,2 +1,7 @@
-# docker
-A collection of commands, best practices, examples &amp; compose files.
+<div align="center">
+
+<img src="https://github.com/gowizzard/docker/assets/30717818/1e9cf91d-4928-48f5-ae51-d916a60a1457" alt="CompVer" width="150">
+
+# Docker
+
+</div>
