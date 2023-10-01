@@ -1,0 +1,2 @@
+user ping on >pong nocommands +ping
+user default on >123456 ~* allcommands

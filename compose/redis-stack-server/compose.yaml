@@ -1,0 +1,18 @@
+# Docker compose file for an example redis stack server
+services:
+    redis-stack:
+        container_name: redis-stack
+        volumes:
+            - /tmp/docker/redis-stack-server/data/redis:/data/redis
+            - ./redis-stack.conf:/etc/configuration/redis-stack.conf
+            - ./users.acl:/etc/users.acl
+        ports:
+            - "6379:6379"
+        restart: always
+        image: redis/redis-stack:latest
+        command: [ "redis-server", "etc/configuration/redis-stack.conf" ]
+        healthcheck:
+            test: [ "CMD", "redis-cli", "--user", "ping", "--pass", "pong", "--no-auth-warning", "ping" ]
+            timeout: 30s
+            retries: 5
+            start_period: 10s
