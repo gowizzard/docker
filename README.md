@@ -17,3 +17,7 @@ Here you find once the contents in this repository. With this you can go directl
 - [Redis](compose/redis)
 - [Redis Stack](compose/redis-stack)
 - [Redis Stack Server](compose/redis-stack-server)
+
+### Examples
+
+- [Redis Triggers Functions Import](examples/redis-triggers-functions-import)
